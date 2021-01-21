@@ -1,7 +1,18 @@
+/* default 세팅 */
 body{
     margin: 0;
     text-align: center;
 }
+*:focus { outline:none; }
+li{
+    list-style: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* 메뉴 부분 */
 .menu{
     width: 210px;
     height: 100vh;
@@ -9,49 +20,100 @@ body{
     position: absolute;
 }
 .menu a{
+    text-decoration: none;
 }
 /* 로고 부분 */
 .logo{
-    margin: 9px 0 18px 0;
-    width : inherit;
-    border : 1px solid red;
-
-
+    margin: 15px 0 15px 0;
 }
+/*  */
 
 
 .menu .searching{
+    overflow: hidden;
 }
 .menu .searching input{
-   
+    border: none;
+    box-sizing: border-box;
+    border:1px solid #8fbbdd;
+    color : #555555;
+    font-size: 12px;
+    margin-left : 15px;
+    float: left;
+    width: 137px;
+    height: 31px;
 }
 .menu .searching .btn{
+    border: none;
+    float: left;
+    height: 30px;
+    width: 33px;
 }
 .menu .searching .btn .icon a{
    
 }
 .big-menu{
-
+    margin-top: 35px;
 }
+  
 .big-menu span{
-   
+   border:1px solid red;
+   width: 106px;
+   height: 37px;
 }
 .big-menu span a{
-    
+    color: white;
+    text-decoration: none;
+    padding: 5px;
 }
 .big-menu span a:nth-child(1){
-    
 }
 .big-menu span a:nth-child(2){
     
 }
-.small-menu{}
-.small-menu span{
+.small-menu{
+    margin-top: 120px;
 }
-.small-menu span:nth-child(1){}
-.small-menu span:nth-child(2){}
-.small-menu span:nth-child(3){}
-.small-menu span:nth-child(4){}
-.small-menu span:nth-child(5){}
+.small-menu li{
+    padding-left: 20px;
+    height: 60px;
+    text-align: left;
+    border: 1px solid white;
+    width : inherit;
+    position: relative;
+}
+.small-menu span{
+    margin-left: 40px;
+    line-height: 60px;
+}
+ 
+.small-menu li::before{
+    font-size: 1px;
+    content : '';
+    width: 20px;
+    height: 20px;
+    position:absolute; 
+    border:1px solid white;
+    border-radius: 50%;
+    top : 50%;
+    transform: translateY(-50%);
+    left : 16px;
+
+}
+.small-menu li a{
+    position :relative; 
+}
+ 
+.small-menu li a i{
+    font-size: 12px;
+    position:absolute;
+    top:5px;
+    left :1px;
+}
+.small-menu li:nth-child(1) a i{
+    left: 2px;
+}
+
+
 
 
