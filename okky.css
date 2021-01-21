@@ -1,63 +1,43 @@
 body{
     margin: 0;
+    text-align: center;
 }
 .menu{
     width: 210px;
-    height: 1797px;
-    border: 1px solid red;
+    height: 100vh;
     background-color: #0059AB;
-    position: relative;
+    position: absolute;
 }
 .menu a{
 }
-.menu img{
-    /* position: absolute; */
-    left: 30px;
-    margin: 30px 0 0 30px;
+/* 로고 부분 */
+.logo{
+    margin: 9px 0 18px 0;
+    width : inherit;
+    border : 1px solid red;
+
+
 }
+
+
 .menu .searching{
 }
 .menu .searching input{
-   margin-left: 19px;
-   margin-top: 40px;
-   outline: none;
-   /* display: inline-block; */
-   width: 138px;
-   height: 30px;
-   position: absolute;
-   color: rgba(211, 211, 211, 0.452);
-   outline: lightgray;
+   
 }
 .menu .searching .btn{
-    /* display: inline-block; */
-    width: 34px;
-    height: 34px;
-    position: absolute;
-    margin-top: 40px;
-    left: 78%;
-    outline:lightgray;
 }
 .menu .searching .btn .icon a{
-    color: black;
-    font-size: 12px;
+   
 }
 .big-menu{
-    position: absolute;
+
 }
 .big-menu span{
-    margin-top: 40px;
-    width: 110px;
-    height: 40px;
-    border: 1px solid red;
-    position: absolute;
-    display: inline-block;
-    box-sizing: border-box;
-    text-align: center;
-    line-height: 40px;
+   
 }
 .big-menu span a{
-    /* color:white; */
-    text-decoration: none;
+    
 }
 .big-menu span a:nth-child(1){
     
@@ -67,7 +47,6 @@ body{
 }
 .small-menu{}
 .small-menu span{
-    display: block;
 }
 .small-menu span:nth-child(1){}
 .small-menu span:nth-child(2){}
