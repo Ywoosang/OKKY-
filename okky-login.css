@@ -1,0 +1,228 @@
+body{
+    margin: 0;
+    text-align: center;
+    background-color: #F8F8F8;
+}
+*:focus { outline:none; }
+li{
+    list-style: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* 메뉴 부분 */
+.menu{
+    width: 210px;
+    height: 1759px;
+    background-color: #0059AB;
+    position: absolute;
+}
+a{
+    text-decoration: none;
+}
+/* 로고 부분 */
+.logo{
+    margin: 15px 0 15px 0;
+}
+/*  */
+
+
+.menu .searching{
+    overflow: hidden;
+}
+.menu .searching input{
+    border: none;
+    box-sizing: border-box;
+    border:1px solid #8fbbdd;
+    color : #555555;
+    font-size: 12px;
+    margin-left : 10px;
+    float: left;
+    width: 137px;
+    height: 31px;
+}
+.menu .searching .btn{
+    border: none;
+    float: left;
+    height: 30px;
+    width: 33px;
+}
+.menu .searching .btn .icon a{
+   
+}
+.big-menu{
+    margin-top: 35px;
+}
+  
+.big-menu span{
+   /* border:1px solid red; */
+   display: inline-block;
+   width: 100px;
+   height: 37px;
+   color: white;
+   line-height: 37px;
+}
+.big-menu span a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+.small-menu{
+    margin-top: 120px;
+}
+.small-menu li{
+    padding-left: 20px;
+    height: 60px;
+    text-align: left;
+    /* border: 1px solid white; */
+    width : inherit;
+    position: relative;
+}
+.small-menu span{
+    margin-left: 40px;
+    line-height: 60px;
+}
+ 
+.small-menu li::before{
+    font-size: 1px;
+    content : '';
+    width: 20px;
+    height: 20px;
+    position:absolute; 
+    border:1px solid white;
+    border-radius: 50%;
+    top : 50%;
+    transform: translateY(-50%);
+    left : 16px;
+
+}
+.small-menu li a{
+    position :relative;
+    color: white; 
+}
+ 
+.small-menu li a i{
+    font-size: 12px;
+    position:absolute;
+    top:5px;
+    left :1px;
+}
+.small-menu li:nth-child(1) a i{
+    left: 2px;
+}
+
+.git-icon{
+    width: 120px;
+    height: 36px;
+    /* border: 1px solid red; */
+    margin-top: 55px;
+    line-height: 36px;
+    font-size: 12px;
+    margin-left: 20px;
+    position: relative;
+}
+.git-icon .fa{
+    color: white;
+}
+.git-icon a{
+    color: white;
+    padding: 7px;
+}
+.git-icon::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 36px;
+    background-color: gray;
+    left: 0;
+}
+
+.backgrd{
+    background-color:#F8F8F8;
+    position: absolute;
+}
+.content-header{
+    border: 1px solid red;
+}
+.content-header h2{
+    color: gray;
+}
+.log-background .log-in .title{
+    width: 387px;
+    height: 60px;
+    top: 66px;
+    margin-left: 240px;
+    border: 1px solid gray;
+    background-color: #FFFFFF;
+}
+.log-background .log-in .title p{
+    font-size: 17px;
+    color: gray;
+}
+.wrap-item{
+    position: relative;
+    background-color: #FFFFFF;
+    border: 1px solid gray;
+    width: 387px;
+    height: 220px;
+    margin-left: 240px;
+}
+
+.wrap-item .item input{
+    border-radius:5px;
+    width: 296px;
+    height: 41px;
+    border: 1px solid lightgray;
+}
+
+.wrap-item .item input:focus{
+    box-shadow: 0 0 10px #0059AB;
+    border: none;
+}
+.check-box{
+    display: flex;
+    border: 1px solid red;
+    position: relative;
+}
+.check-box input{
+    width: 20px;
+    height: 20px;
+    display: inline-block; 
+}
+.check-box .input p{
+    position: absolute;
+    border: 1px solid red;
+}
+
+.login-btn button{
+    display: inline-block;
+    width: 295px;
+    height: 35px;
+    background-color: #337AB7;
+    border: none;
+}
+.login-btn button a{
+    color: white;
+    box-sizing: border-box;
+}
+.signup-block{
+    display: flex;
+    margin-left: 100px;
+}
+.signup-block a{
+    display: inline-block;
+    text-align: center;
+    color: #337AB7;
+    margin-left: 15px;
+    position: relative;
+}
+.signup-block a:nth-child(1)::after{
+    content: '/';
+    position: absolute;
+    bottom: 15px;
+    left: 68px;
+    color: gray;
+    font-size: 20px;
+}
