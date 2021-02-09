@@ -57,14 +57,20 @@ ul{
 }
   
 .big-menu span{
-   border:1px solid red;
-   width: 106px;
-   height: 37px;
+    display: inline-block;
+    /* border:1px solid red */
+    width: 102.2px;
+    height: 38px;
+    line-height: 38px;
+    box-sizing: border-box;
 }
 .big-menu span a{
     color: white;
     text-decoration: none;
     padding: 5px;
+}
+.big-menu span i{
+    color: white;
 }
 .big-menu span a:nth-child(1){
 }
@@ -78,7 +84,7 @@ ul{
     padding-left: 20px;
     height: 60px;
     text-align: left;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     width : inherit;
     position: relative;
 }
@@ -101,19 +107,282 @@ ul{
 
 }
 .small-menu li a{
-    position :relative; 
+    position :relative;
+    color: white; 
 }
- 
+
 .small-menu li a i{
     font-size: 12px;
     position:absolute;
     top:5px;
     left :1px;
+    color: white;
 }
 .small-menu li:nth-child(1) a i{
     left: 2px;
 }
+.top-main-block{
+    position: absolute;
+    /* border: 1px solid red; */
+    width: 850px;
+    height: 235px;
+    margin-left: 240px;
+    margin-top: 153px;
+}
 
+.left-block{
+    width: 390px;
+    height: 235px;
+    /* border: 1px solid red; */
+}
+.left-block .title p{
+    font-size: 14px;
+    margin-left: 0;
+    margin-top: 0;
+    /* border: 1px solid black; */
+    width: 390px;
+    text-align: left;
 
+}
+.left-block .title p::before{
+    content:"\f024";
+    font-family: 'fontawesome';
+    margin:2px;
+    color: #0062B6;
+}
 
+.left-block ul{
+    /* border: 1px solid green; */
+    width: 390px;
+    height: 200px;
+}
+.left-block li{
+    border: 1px solid lightgray;
+    height: 40px;
+    border-bottom: none;
+    margin-top: 0;
+    position: relative;
+}
+.left-block li:last-child{
+    border: 1px solid lightgray;
+}
+.left-block li::before{
+    content: '';
+    width: 2px;
+    height: inherit;
+    background-color: #5B5BDC;
+    position: absolute;
+    left: 0;
+}
+.right-block{
+    width: 390px;
+    height: 235px;
+    /* border: 1px solid red; */
+    margin-left: 460px;
+    margin-top: -237px;
+}
+.right-block .title p{
+    font-size: 14px;
+    margin-left: 0;
+    margin-top: 0;
+    /* border: 1px solid black; */
+    width: 390px;
+    text-align: left;
 
+}
+.right-block .title p::before{
+    content:"\f005";
+    font-family: 'fontawesome';
+    margin:2px;
+    color: #0062B6;
+}
+
+.right-block ul{
+    /* border: 1px solid green; */
+    width: 390px;
+    height: 200px;
+}
+.right-block li{
+    border: 1px solid lightgray;
+    height: 40px;
+    border-bottom: none;
+    margin-top: 0;
+    position: relative;
+}
+.right-block li:last-child{
+    border: 1px solid lightgray;
+}
+.right-block li::before{
+    content: '';
+    width: 2px;
+    height: inherit;
+    background-color: #5B5BDC;
+    position: absolute;
+    left: 0;
+}
+
+.middle-main-block{
+    width: 520px;
+    height: 440px;
+    /* border: 1px solid red; */
+    position: absolute;
+    margin-top: 430px;
+    margin-left: 240px;
+}
+.mainbox{}
+.middle-main-block .mainbox .title{
+    /* border: 1px solid red; */
+}
+.middle-main-block .mainbox .title p{
+    font-size: 14px;
+    height: 30px;
+    text-align: left;
+}
+.middle-main-block .mainbox .title p::before{
+    content:"\f1c0";
+    font-family: 'fontawesome';
+    margin: 2px;
+    color: #0062B6;
+}
+.middle-main-block .mainbox .plus{}
+/* .mainbox .plus span{
+    width: 3px;
+    height: 3px;
+    border: 1px solid gray;
+    background-color: gray;
+
+} */
+.middle-main-block .mainbox ul{
+}
+.middle-main-block .mainbox li{
+    border: 1px solid lightgray;
+    height: 37px;
+    border-bottom: none;
+}
+.middle-main-block .mainbox li:last-child{
+    border: 1px solid lightgray;
+}
+.middle-main-block .mainbox li::before{
+    content: '';
+    width: 4px;
+    height: inherit;
+    position: absolute;
+    background-color: #dddd;
+    left: 0;
+}
+
+.bottom-main-block{
+    width: 520px;
+    height: 755px;
+    /* border: 1px solid red; */
+    position: absolute;
+    margin-top: 920px;
+    margin-left: 240px;
+}
+.bottom-main-block .mainbox .title p{
+    font-size: 14px;
+    height: 30px;
+    text-align: left;
+    /* border: 1px solid green; */
+    margin: 0;
+}
+.bottom-main-block .mainbox .title p::before{
+    content:"\f075";
+    font-family: 'fontawesome';
+    margin: 2px;
+    color: #0059AB;
+}
+.bottom-main-block ul{
+    width: inherit;
+    height: 200px;
+}
+.bottom-main-block .mainbox li{
+    border: 1px solid lightgray;
+    height: 37px;
+    border-bottom: none;
+}
+
+.bottom-main-block .mainbox li::before{
+    content: '';
+    width: 3px;
+    height: inherit;
+    background-color: #0059AB;
+    position: absolute;
+    left: 0;
+}
+.tech{
+    position: absolute;
+    /* border: 1px solid red; */
+    width: 255px;
+    height: 325px;
+    margin-top: 695px;
+    margin-left: 800px;
+}
+.tech .container{}
+.container .title p{
+    /* border: 1px solid red; */
+    text-align: left;
+    margin: 0;
+    font-size: 16px;
+}
+.container .title p::before{
+    content:"\f121";
+    font-family: 'fontawesome';
+    margin: 5px;
+    color: #489EDC;
+}
+.container .main-box{
+    margin-top: 10px;
+    width: 255px;
+    height: 300px;
+    border: 1px solid lightgray;
+}
+.main-box a{
+    text-decoration: none;
+    font-size:75%;
+    line-height: 16px;
+    color: white;
+}
+.icon{
+    position: absolute;
+    left: 15px;
+    top: 45px;
+}
+.main-box button{
+    border: none;
+    border-radius: 2px;
+    height: 16px;
+    margin: 0px;
+}
+.main-box button:nth-child(1){
+    background-color: #31B0D5;
+}
+.main-box button:nth-child(2){
+    background-color: #BBBBBB;
+}
+.main-box .memo p{
+    /* border: 1px solid red; */
+    margin-top: 66px;
+    width: 230px;
+    margin-left: 13px;
+}
+.memo p a{
+    color: #23527C;
+    font-size: 14px;
+}
+
+/* Tech--프로필, 추천수, 작성 날짜 */
+.char span{
+    font-size: 10px;
+    display: inline-block;
+    /* border: 1px solid red; */
+    margin: 0;
+    color: gray;
+}
+.char span a{
+    font-size: 10px;
+    display: inline-block;
+}
+.main-box{
+    margin: 0;
+}

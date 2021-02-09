@@ -19,6 +19,7 @@ ul{
     background-color: #0059AB;
     position: absolute;
     top: 0;
+    z-index: 1;
 }
 a{
     text-decoration: none;
@@ -140,26 +141,23 @@ a{
     left: 0;
 }
 
-.backgrd{
+.background{
     background-color:#F8F8F8;
     position: absolute;
 }
-.content-header{
-    /* border: 1px solid red; */
-}
-.content-header span h2{
+.background .top-title h2{
     color: gray;
-    margin-left: -200px;
+
 }
-.log-background .log-in .title{
+.join-background .join-in .title{
     width: 387px;
     height: 60px;
-    top: 66px;
+    top: 70px;
     margin-left: 240px;
     border: 1px solid lightgray;
     background-color: #FFFFFF;
 }
-.log-background .log-in .title p{
+.join-background .join-in .title p{
     font-size: 17px;
     color: gray;
 }
@@ -168,17 +166,20 @@ a{
     background-color: #FFFFFF;
     border: 1px solid lightgray;
     width: 387px;
-    height: 240px;
+    height: 436px;
     margin-left: 240px;
     border-top: none;
 }
 
 .wrap-item .item input{
     border-radius:5px;
-    width: 296px;
-    height: 41px;
+    width: 350px;
+    height: 40px;
     border: 1px solid lightgray;
     margin-top: 10px;
+}
+.wrap-item .item input::placeholder{
+    margin-left: 15px;
 }
 
 .wrap-item .item input:focus{
@@ -205,59 +206,70 @@ a{
     margin-left: 65px;
 }
 
-.login-btn button{
+.formation-btn button{
     display: inline-block;
     width: 295px;
     height: 35px;
-    background-color: #0059AB;
+    background-color:#0059AB;
     border: none;
     border-radius: 4px;
 }
-.login-btn button:hover{
-    background-color: #286090;
+.formation-btn button:hover{
+    background-color: #337AB7;
 }
-.login-btn a button{
+.formation-btn button a{
     color: white;
     box-sizing: border-box;
 }
-.signup-block{
+.manual-block{
     display: flex;
     margin-left: 100px;
 }
-.signup-block a{
+.manual-block a{
     display: inline-block;
     text-align: center;
     color: #337AB7;
     margin-left: 15px;
     position: relative;
-    margin-top: -10px;
+    margin-top: 0px;
+    margin-left: -20px;
 }
-.signup-block a:nth-child(1)::after{
+.manual-block a:nth-child(1){
+    margin-left: -30px;
+}
+.manual-block a:nth-child(2){
+    margin-left: 30px;
+}
+.manual-block a:nth-child(1)::after{
     content: '/';
     position: absolute;
     bottom: 15px;
-    left: 68px;
+    margin-left: 60%;
     color: lightgray;
     font-size: 20px;
 }
 
-.sns-login{
+.sns-join{
     position: absolute;
     top: 70px;
     left: 660px;
 }
-.sns-login .title{
+.sns-join .title{
     border: 1px solid lightgray;
     width: 388px;
     height: 57px;
+    background-color: #fff;
+}
+.sns-join .title p{
     color: gray;
 }
-.sns-login .wrap-item2{
+.sns-join .wrap-item2{
     border: 1px solid lightgray;
     width: 388px;
     height: 276px;
+    background-color: #fff;
 }
-.sns-login .wrap-item2 div{
+.sns-join .wrap-item2 div{
     width: 300px;
     height: 35px;
     border: 1px solid lightgray;
@@ -265,6 +277,7 @@ a{
     border-radius: 5px;
     margin-left: 45px;
     line-height: 35px;
+    
 }
 .wrap-item2 a:nth-child(1) div{
     background-color: black;
@@ -298,6 +311,7 @@ a{
     background-color: #1EC800;
     color: white;
 }
+
 .wrap-item2 a:hover div{
     box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.432);
 }
